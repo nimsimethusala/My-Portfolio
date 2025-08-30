@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0px) translateX(0px) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateY(-30px) translateX(20px) scale(1.1);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px) translateX(-15px) scale(0.9);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateY(-40px) translateX(10px) scale(1.05);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}

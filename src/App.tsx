@@ -1,27 +1,23 @@
-import { Layout } from './components/Layout'
-import { HeroSection } from './components/HeroSection'
-import { AboutSection } from './components/AboutSection'
-import { SkillsSection } from './components/SkillsSection'
-import { GallerySection } from './components/GallerySection'
-import { ProjectsSection } from './components/ProjectsSection'
-import { ContactSection } from './components/ContactSection'
-import {useEffect, useState} from "react";
+import {ThemeProvider} from "./context/ThemeContext.tsx";
+import BackgroundAnimation from "./ui/BackgroundAnimation.tsx";
+import Layout from "./Layout.tsx";
+import HeroSection from "./sections/HeroSection.tsx";
+import AboutSection from "./sections/AboutSection.tsx";
+import ProjectsSection from "./sections/ProjectsSection.tsx";
+import ContactSection from "./sections/ContactSection.tsx";
 
 export function App() {
-    const [isLoaded, setIsLoaded] = useState(false);
-
-    useEffect(() => {
-        setIsLoaded(true);
-    }, []);
-
     return (
-        <Layout>
-            <HeroSection isLoaded={isLoaded}/>
-            <AboutSection />
-            <SkillsSection />
-            <GallerySection />
-            <ProjectsSection />
-            <ContactSection />
-        </Layout>
+        <ThemeProvider>
+            <div className="relative w-full min-h-screen overflow-hidden">
+                <BackgroundAnimation />
+                <Layout>
+                    <HeroSection />
+                    <AboutSection />
+                    <ProjectsSection />
+                    <ContactSection />
+                </Layout>
+            </div>
+        </ThemeProvider>
     )
 }
