@@ -47,15 +47,15 @@ const ProjectsSection: React.FC = () => {
             github: "https://github.com/Shashi-Madushan/Utax_Frontend.git",
             tags: ["MERN", "OCR technology"],
         },
-        {
-            id: 4,
-            title: "Weather Dashboard",
-            description:
-                "A weather application with interactive maps and detailed forecasts.",
-            image:
-                "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-            tags: ["React", "API", "Chart.js"],
-        },
+        // {
+        //     id: 4,
+        //     title: "POS System",
+        //     description:
+        //         "A weather application with interactive maps and detailed forecasts.",
+        //     image:
+        //         "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        //     tags: ["React", "API", "Chart.js"],
+        // },
     ]
 
     return (
@@ -89,8 +89,8 @@ const ProjectsSection: React.FC = () => {
                             key={project.id}
                             className="rounded-lg overflow-hidden shadow-lg"
                             style={{
-                                border: `2px solid ${themeColors[theme].accent}`, // ✅ fixed
-                                boxShadow: `0 0 15px ${themeColors[theme].accent}55`, // ✅ subtle glow
+                                border: `2px solid ${themeColors[theme].accent}`,
+                                boxShadow: `0 0 15px ${themeColors[theme].accent}55`,
                             }}
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
