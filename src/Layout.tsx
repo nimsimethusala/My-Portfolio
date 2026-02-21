@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <div
             className="min-h-screen w-full text-white transition-colors duration-500"
-            style={{ backgroundColor: themeColors[theme].background }} // ✅ correct way
+            style={{ backgroundColor: themeColors[theme].background }}
         >
             <Header />
             <main className="w-full">{children}</main>

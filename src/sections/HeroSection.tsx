@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
                     {/* Subtitle */}
                     <AnimatedText
                         text="Creating beautiful web experiences with modern technologies"
-                        className="text-xl md:text-2xl mb-8 max-w-2xl"
+                        className="text-xl md:text-2xl mb-8 max-w-2xl md:text-center"
                         style={{ color: themeColors[theme].text }}
                     />
 
