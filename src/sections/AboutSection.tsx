@@ -128,7 +128,7 @@ const AboutSection: React.FC = () => {
                     }}
                 >
                     <h2
-                        className="text-5xl md:text-4xl font-bold mb-4"
+                        className="text-5xl md:text-3xl font-bold mb-4"
                         style={{ color: themeColors[theme].text }}
                     >
                         About Me
@@ -199,7 +199,7 @@ const AboutSection: React.FC = () => {
                             websites to complex web applications.
                         </motion.p>
                         <motion.p
-                            className="text-gray-300 mb-8"
+                            className="text-gray-300 mb-8 md:text-center"
                             initial={{
                                 opacity: 0,
                                 y: 20,
@@ -225,7 +225,7 @@ const AboutSection: React.FC = () => {
                             <h3 className="text-3xl font-semibold mb-4"
                                 style={{ color: themeColors[theme].text }}
                             >My Skills</h3>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2 md:items-center">
                                 {skills.map((skill, index) => (
                                     <motion.span
                                         className={`${themeColors[theme].primary} px-3 py-1 rounded-full text-white text-sm flex items-center gap-1`}

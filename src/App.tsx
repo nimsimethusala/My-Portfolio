@@ -5,6 +5,7 @@ import HeroSection from "./sections/HeroSection.tsx";
 import AboutSection from "./sections/AboutSection.tsx";
 import ProjectsSection from "./sections/ProjectsSection.tsx";
 import ContactSection from "./sections/ContactSection.tsx";
+import { GallerySection } from "./sections/GallerySection.tsx";
 
 export function App() {
     return (
@@ -15,6 +16,7 @@ export function App() {
                     <HeroSection />
                     <AboutSection />
                     <ProjectsSection />
+                    <GallerySection />
                     <ContactSection />
                 </Layout>
             </div>

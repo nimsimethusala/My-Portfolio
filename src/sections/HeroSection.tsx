@@ -44,19 +44,19 @@ const HeroSection: React.FC = () => {
                     {/* Heading */}
                     <AnimatedText
                         text="Hello, I'm"
-                        className="text-3xl md:text-5xl font-bold"
+                        className="text-3xl md:text-5xl font-bold text-center"
                         style={{ color: themeColors[theme].text }}
                     />
                     <AnimatedText
                         text="Nimsi Methusala"
-                        className="text-4xl md:text-6xl font-extrabold mb-4"
+                        className="text-4xl md:text-6xl font-extrabold text-center mb-4"
                         style={{ color: themeColors[theme].accent }}
                     />
 
                     {/* Subtitle */}
                     <AnimatedText
                         text="Creating beautiful web experiences with modern technologies"
-                        className="text-xl md:text-2xl mb-8 max-w-2xl md:text-center"
+                        className="text-xl md:text-2xl mb-8 max-w-2xl"
                         style={{ color: themeColors[theme].text }}
                     />
 
