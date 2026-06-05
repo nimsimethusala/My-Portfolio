@@ -193,7 +193,7 @@ export function GallerySection() {
           className="text-center mb-16"
         >
           <h2
-            className="text-5xl font-bold"
+            className="text-5xl md:text-4xl font-bold mb-3"
             style={{ color: themeColors[theme].text }}
           >
             Gallery

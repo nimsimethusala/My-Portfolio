@@ -128,12 +128,12 @@ const AboutSection: React.FC = () => {
                     }}
                 >
                     <h2
-                        className="text-5xl md:text-3xl font-bold mb-4"
+                        className="text-5xl md:text-4xl font-bold mb-4"
                         style={{ color: themeColors[theme].text }}
                     >
                         About Me
                     </h2>
-                    <div className="w-24 h-1 mx-auto mb-4 rounded-full bg-white"></div>
+                    <div className="w-35 h-[4px] rounded-full mb-4 mx-auto bg-white"></div>
                     <p className="text-gray-300 text-2xl max-w-2xl mx-auto">
                         Get to know more about me and my skills
                     </p>
